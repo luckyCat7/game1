@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="./css/three.css">
+		<title>宝宝游戏</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="wrap-inner">
+				<div class="wrap-inner-box">
+					<a href="one.html"><img src="img/picture1.gif"/></a>
+					<a href="two.html"><img src="img/picture2.gif"/></a>
+					<a href="three.html"><img src="img/picture3.gif"/></a>
+				</div>
+				<button class="backPlay">重玩</button>
+			</div>
+		</div>
+		<script src="js/Change the viewport.js"></script>
+		<script>
+			let box=document.querySelector(".wrap-inner-box");
+			let play=document.querySelector(".backPlay");
+			play.addEventListener("click",function(){
+				location.href="two.html";
+			})
+			box.addEventListener("touchmove",function(){
+				this.style.animation=null;
+			})
+		</script>
+	</body>
+</html>

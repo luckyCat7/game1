@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            height: 100%;
+        }
+        #app {
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 180px 100px;
+            background: url('./img/bg.jpg');
+            background-size: cover;
+        }
+        #app .title{
+           text-align:center;
+            height: 330px;
+            line-height:300px;
+            color: #fff;
+            font-size: 56px;
+            margin: 0 auto 250px;
+            background: url('img/title.gif');
+            background-size: cover;
+        }
+        #app #imgBox {
+            width: 350px;
+            height: 180px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        #app img {
+            width: 350px;
+            height: 180px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h2 class='title'>Magic game</h2>
+        <div id="imgBox"><img src="./img/play.gif" alt="开始游戏"></div>
+    </div>
+    <script src="./js/Change the viewport.js"></script>
+    <script>
+        onload=function() {
+            //获取按钮元素
+            let btn = document.querySelector('#imgBox');
+            btn.addEventListener('click',function() {
+                location.href='two.html';
+            })
+        }
+    </script>
+</body>
+</html>
